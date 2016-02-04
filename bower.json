@@ -1,0 +1,21 @@
+{
+  "name": "NucleoMedia Samples",
+  "version": "0.0.0",
+  "authors": [
+    "Luiz Patriani <luiz@speedysolutions.com.br>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "Flowtype.js": "~1.1.0",
+    "nmdstemplateapi": "*"
+  }
+}

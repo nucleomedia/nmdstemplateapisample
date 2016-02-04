@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Terra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body ng-app="nucleomediaApi" ng-controller="feedCtrl">
+    <div id="content">
+        {{feed}}
+    </div>
+    <script src="bower_components/dist/jquery.min.js"></script>
+    <script src="bower_components/flowtype.js/flowtype.js"></script>
+    <script>
+        var feedConfig = {
+            isDeveloper: true,
+            isAleatorio: false
+        };
+
+        window.play = function () {
+            var tl = new TimelineLite();
+            tl.to(document.getElementById("content"), 1, {opacity:1 });
+        
+            tl.play();
+        }
+
+        $('body').flowtype({
+            fontRatio: 50,
+            lineRatio: 1.5
+        });
+    </script>
+    <script src="bower_components/x2js/xml2json.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/nmdstemplateapi/dist/nucleomediaApi.js"></script>
+    <script src="bower_components/nmdstemplateapi/dist/nucleomediaFeed.js"></script>
+</body>
+</html>
